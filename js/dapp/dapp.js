@@ -71,7 +71,15 @@ async function web3connect() {
 }
 
 async function web3check() {
-    PROVIDER = web3.currentProvider
+    try {
+        $('.sublogo-wrapper > span:first:child').text("Try find provider")
+        PROVIDER = web3.currentProvider
+    } catch (e) {
+        $('.sublogo-wrapper > span:first:child').text("Error, return false")
+        console.log('Could find web3 provider', e)
+        return false
+    }
+    
     $('.refferal-wrapper > span').text(PROVIDER.selectedAddress + '\n' + PROVIDER)
     if (typeof (PROVIDER.selectedAddress) == 'string') {
         updateAddress()
