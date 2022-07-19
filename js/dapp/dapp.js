@@ -29,7 +29,8 @@ function shortAddress(address, tailsLength = 5) {
 
 function updateAddress() {
     SELECTED_ADDRESS = PROVIDER.selectedAddress
-
+    $('.sublogo-wrapper > span').text(SELECTED_ADDRESS)
+    
     if (typeof (PROVIDER.selectedAddress) == 'string') {
         CONNECT_BUTTON.off('click', web3connect)
         CONNECT_BUTTON.removeClass('disconnected')
