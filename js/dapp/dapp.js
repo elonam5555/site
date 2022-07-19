@@ -29,7 +29,7 @@ function shortAddress(address, tailsLength = 5) {
 }
 
 function updateAddress() {
-    SELECTED_ADDRESS = PROVIDER.selectedAddress
+    SELECTED_ADDRESS = PROVIDER.accounts[0]
     
     if (typeof (PROVIDER.selectedAddress) == 'string') {
         CONNECT_BUTTON.off('click', web3connect)
@@ -64,16 +64,12 @@ async function web3connect() {
         try{
             updateAddress()
         } catch (e) {
-            $('.sublogo-wrapper > span').text('Error3')
             console.log('Could not set address', e)
         }
-        
-        
         
         try{
             setProviderEvents()
         } catch (e) {
-            $('.sublogo-wrapper > span').text('Error2')
             console.log('Could not set provider events', e)
         }
         
