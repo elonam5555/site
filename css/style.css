@@ -503,7 +503,6 @@ header .logo-hl {
 }
 
 .contacts-row.channel {
-    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;

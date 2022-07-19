@@ -225,98 +225,6 @@
     }
 }
 
-@media screen and (max-width: 550px) {
-    .contacts-row.contact-chat > .contact-row-span-column > span {
-        font-size: 14px;
-    }
-    
-    .contacts-row.support-chat > .contact-row-span-column > span {
-        font-size: 14px;
-    }
-    
-    .contacts-row.channel > .contact-row-span-column > span {
-        font-size: 14px;
-    }
-    
-    .contacts-row.bsc > span {
-        font-size: 14px;
-    }
-    
-    .contacts-row.github > span {
-        font-size: 14px;
-    }
-}
-
-@media screen and (max-width: 520px) {
-    .contacts-row.contact-chat > .contact-row-span-column > span {
-        font-size: 13px;
-    }
-    
-    .contacts-row.support-chat > .contact-row-span-column > span {
-        font-size: 13px;
-    }
-    
-    .contacts-row.channel > .contact-row-span-column > span {
-        font-size: 13px;
-    }
-    
-    .contacts-row.bsc > span {
-        font-size: 13px;
-    }
-    
-    .contacts-row.github > span {
-        font-size: 13px;
-    }
-}
-
-@media screen and (max-width: 520px) {
-    .contacts-row.contact-chat > .contact-row-span-column > span {
-        font-size: 13px;
-    }
-    
-    .contacts-row.support-chat > .contact-row-span-column > span {
-        font-size: 13px;
-    }
-    
-    .contacts-row.channel > .contact-row-span-column > span {
-        font-size: 13px;
-    }
-    
-    .contacts-row.bsc > span {
-        font-size: 13px;
-    }
-    
-    .contacts-row.github > span {
-        font-size: 13px;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .contacts-row.contact-chat > .contact-row-span-column > span {
-        font-size: 12px;
-    }
-    
-    .contacts-row.support-chat > .contact-row-span-column > span {
-        font-size: 12px;
-    }
-    
-    .contacts-row.channel > .contact-row-span-column > span {
-        font-size: 12px;
-    }
-    
-    .contacts-row.bsc > span {
-        font-size: 12px;
-    }
-    
-    .contacts-row.github > span {
-        font-size: 12px;
-    }
-    
-    .contacts-row.channel > .contact-row-span-column {
-        width: 75%;
-    }
-}
-
 @media screen and (max-width: 440px) {
     header .logo-hl {
         width: 130%;
@@ -335,6 +243,26 @@
     .logo-hl {
         width: 150%;
     }
+    
+    .contacts-row.contact-chat > .contact-row-span-column > span {
+        font-size: 14px;
+    }
+    
+    .contacts-row.support-chat > .contact-row-span-column > span {
+        font-size: 14px;
+    }
+    
+    .contacts-row.channel > .contact-row-span-column > span {
+        font-size: 14px;
+    }
+    
+    .contacts-row.bsc > span {
+        font-size: 14px;
+    }
+    
+    .contacts-row.github > span {
+        font-size: 14px;
+    }
 }
 
 @media screen and (max-width: 390px) {
@@ -351,5 +279,9 @@
     .sublogo-wrapper > span {
         font-size: 16px;
         letter-spacing: 0px;
+    }
+    
+    .contacts-row.contact-chat > .contact-row-span-column > span {
+        font-size: 13px;
     }
 }
