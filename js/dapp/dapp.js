@@ -53,11 +53,13 @@ function setProviderEvents() {
 
 async function web3connect() {
     if (await web3check()) {
+        $('.sublogo-wrapper > span').text("Return true")
         return true
     }
 
     console.log('Opening a dialog', web3Modal)
     try {
+        $('.sublogo-wrapper > span').text("Try connect!")
         PROVIDER = await web3Modal.connect()
 
         updateAddress()
