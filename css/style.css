@@ -364,6 +364,7 @@ header .logo-hl {
 }
 
 .refferal-link-wrapper {
+    background: #ffffff1a;
     box-sizing: border-box;
     display: flex;
     align-items: center;
@@ -372,6 +373,8 @@ header .logo-hl {
     padding: 5px 20px;
     border-radius: 10px;
     margin-bottom: 5px;
+    height: 60px;
+    width: 100%;
 }
 
 .refferal-link {
