@@ -52,8 +52,16 @@
 }
 
 @media screen and (max-width: 440px) {
+    header .logo-hl {
+        width: 130%;
+    }
+    
     footer .logo {
         font-size: 20px;
+    }
+    
+    .sublogo-wrapper > span {
+        font-size: 17px;
     }
 }
 
@@ -63,8 +71,19 @@
     }
 }
 
+@media screen and (max-width: 390px) {
+    .sublogo-wrapper > span:nth-child(2) {
+        margin: 0 10px;
+    }
+}
+
 @media screen and (max-width: 370px) {
     footer .logo {
         font-size: 16px;
+    }
+    
+    .sublogo-wrapper > span {
+        font-size: 16px;
+        letter-spacing: 0px;
     }
 }

@@ -31,7 +31,7 @@ html {
 }
 
 header {
-    background: linear-gradient(0deg, #ffffff00, #000000aa, #000000);
+    background: linear-gradient(0deg, #ffffff00, #000000 90%);
     padding-top: 10px;
 }
 
@@ -45,7 +45,7 @@ header .logo {
     flex-direction: column;
     align-items: center;
     font-family: "CarterOne";
-    color: #f5deb3;
+    color: #f4faff
 }
 
 header .logo > span {
@@ -65,19 +65,36 @@ header .logo-hl {
     margin: 5px 0;
     height: 2px;
     width: 300%;
-    background: linear-gradient(90deg, #ffffff00, #f5deb3, #ffffff00);
+    background: linear-gradient(90deg, #ffffff00, #f4faff, #ffffff00);
 }
 
 .sublogo-wrapper {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
 }
 
 .sublogo-wrapper > span {
     padding-top: 5px;
+    font-size: 20px;
+    letter-spacing: 0.8px;
     font-family: "Roboto";
+    font-weight: bold;
     color: #ffffff;
+}
+
+.sublogo-wrapper > span:first-child {
+    color: #1260ef;
+}
+
+.sublogo-wrapper > span:nth-child(2) {
+    color: #e15151;
+    margin: 0 25px;
+}
+
+.sublogo-wrapper > span:last-child {
+    color: #ffcc00;
 }
 
 .social-and-connect-wrapper {
@@ -251,15 +268,16 @@ header .logo-hl {
 
 .section-refferal-wrapper {
     padding-top: 10px;
-    width: 65%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: linear-gradient(95deg, #ffffff00, #000000, #ffffff00);
 }
 
 .refferal-title {
     font-family: 'Roboto';
-    color: #f5deb3;
+    color: #f4faff;
     font-size: 35px;
     text-align: center;
 }
@@ -282,6 +300,7 @@ header .logo-hl {
 
 .refferal-wrapper > span > span {
     color: #eb9900;
+    font-weight: bold;
 }
 
 .refferal-link-wrapper {
@@ -345,8 +364,9 @@ header .logo-hl {
 }
 
 .section-contacts-wrapper {
+    background: linear-gradient(95deg, #ffffff00, #000000, #ffffff00);
     padding-top: 10px;
-    width: 65%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -354,7 +374,7 @@ header .logo-hl {
 
 .contacts-title {
     font-family: 'Roboto';
-    color: #f5deb3;
+    color: #f4faff;
     font-size: 35px;
     text-align: center;
 }
@@ -383,7 +403,7 @@ header .logo-hl {
 .contacts-row > span > a {
     text-decoration: none;
     font-weight: bold;
-    color: #f5deb3;
+    color: #ffcc00;
     transition: color 0.25s ease;
 }
 
@@ -399,13 +419,14 @@ header .logo-hl {
 }
 
 footer {
-    padding: 25px 0px;
     display: flex;
     justify-content: center;
     background: linear-gradient(0deg, #000000, #ffffff00);
 }
 
 .footer-wrapper {
+    background: linear-gradient(95deg, #ffffff00, #000000, #ffffff00);
+    padding: 25px 0px;
     width: 80%;
     display: flex;
     align-items: center;
@@ -417,5 +438,5 @@ footer .logo {
     flex-direction: row;
     font-family: "CarterOne";
     font-size: 25px;
-    color: #f5deb3
+    color: #f4faff;
 }

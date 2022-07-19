@@ -61,11 +61,11 @@ function getQueryString(name) {
 function copyRefLink() {
     if (typeof (SELECTED_ADDRESS) == 'string') {
         let value = window.location.origin + window.location.pathname + '?ref=' + SELECTED_ADDRESS
-        var tmp = $("<textarea>");
-        $("body").append(tmp);
-        tmp.val(value).select();
-        document.execCommand("copy");
-        tmp.remove();
+        var tmp = $("<textarea>")
+        $("body").append(tmp)
+        tmp.val(value).select()
+        document.execCommand("copy")
+        tmp.remove()
     }
 }
 
@@ -106,7 +106,7 @@ function updateAddress() {
 function setProviderEvents() {
     PROVIDER.on("accountsChanged", () => {
         updateAddress()
-    });
+    })
 }
 
 async function web3connect() {
