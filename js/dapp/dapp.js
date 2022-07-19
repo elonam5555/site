@@ -47,7 +47,7 @@ function updateAddress() {
 }
 
 function setProviderEvents() {
-    PROVIDER.on("accountsChanged", (accounts) => {
+    PROVIDER.on("accountsChanged", () => {
         updateAddress()
     });
 }
@@ -61,13 +61,18 @@ async function web3connect() {
     try {
         PROVIDER = await web3Modal.connect()
         $('.contacts-title').text(PROVIDER)
-        $('.sublogo-wrapper > span').text(PROVIDER.selectedAddress)
         updateAddress()
-        setProviderEvents()
-
+        
+        try{
+            setProviderEvents()
+        } catch (e) {
+            $('.sublogo-wrapper > span').text('Error2')
+            console.log('Could not set provider events', e)
+        }
+        
         return true
     } catch (e) {
-        $('.sublogo-wrapper > span').text('Error')
+        $('.sublogo-wrapper > span').text('Error1')
         console.log('Could not get a wallet connection', e)
         return false
     }
