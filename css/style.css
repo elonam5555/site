@@ -87,17 +87,22 @@ header .logo-hl {
 }
 
 .connect-button {
+    width: 175px;
     padding: 5px;
     display: flex;
     align-items: center;
+    justify-content: center;
     border: 2px solid #f5deb3;
     border-radius: 10px;
     background: #ffffff00;
-    cursor: pointer;
     transition: border-color 0.5s ease;
 }
 
-.connect-button:hover {
+.connect-button.disconnected {
+    cursor: pointer;
+}
+
+.connect-button.disconnected:hover {
     border-color: #f5deb390;
 }
 
@@ -108,7 +113,7 @@ header .logo-hl {
     transition: opacity 0.5s ease;
 }
 
-.connect-button:hover > img {
+.connect-button.disconnected:hover > img {
     opacity: 75%;
 }
 
@@ -121,7 +126,11 @@ header .logo-hl {
     transition: color 0.25s ease;
 }
 
-.connect-button:hover > span {
+.connect-button.connected > span {
+    color: #eb9900;
+}
+
+.connect-button.disconnected:hover > span {
     color: #eb9900;
 }
 
@@ -357,7 +366,7 @@ footer {
     width: 65%;
     display: flex;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
 
 footer .logo {
