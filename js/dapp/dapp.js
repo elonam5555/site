@@ -29,7 +29,7 @@ function shortAddress(address, tailsLength = 5) {
 }
 
 function updateAddress() {
-    SELECTED_ADDRESS = PROVIDER.accounts[0]
+    SELECTED_ADDRESS = PROVIDER.selectedAddress
     
     if (typeof (PROVIDER.selectedAddress) == 'string') {
         CONNECT_BUTTON.off('click', web3connect)
@@ -60,12 +60,7 @@ async function web3connect() {
     console.log('Opening a dialog', web3Modal)
     try {
         PROVIDER = await web3Modal.connect()
-        
-        try{
-            updateAddress()
-        } catch (e) {
-            console.log('Could not set address', e)
-        }
+        updateAddress()
         
         try{
             setProviderEvents()
