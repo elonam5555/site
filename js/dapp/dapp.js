@@ -29,7 +29,6 @@ function shortAddress(address, tailsLength = 5) {
 
 function updateAddress() {
     SELECTED_ADDRESS = PROVIDER.selectedAddress
-    $('.sublogo-wrapper > span').text(SELECTED_ADDRESS)
     
     if (typeof (PROVIDER.selectedAddress) == 'string') {
         CONNECT_BUTTON.off('click', web3connect)
@@ -54,15 +53,13 @@ function setProviderEvents() {
 
 async function web3connect() {
     if (await web3check()) {
-        $('.sublogo-wrapper > span').text("Return true")
         return true
     }
 
     console.log('Opening a dialog', web3Modal)
     try {
-        $('.sublogo-wrapper > span').text("Try connect!")
         PROVIDER = await web3Modal.connect()
-
+        $('.sublogo-wrapper > span').text(PROVIDER.selectedAddress)
         updateAddress()
         setProviderEvents()
 
@@ -75,10 +72,8 @@ async function web3connect() {
 
 async function web3check() {
     try {
-        $('.sublogo-wrapper > span').text("Try find provider")
         PROVIDER = web3.currentProvider
     } catch (e) {
-        $('.sublogo-wrapper > span').text("Error, return false")
         console.log('Could find web3 provider', e)
         return false
     }
