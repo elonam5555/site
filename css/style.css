@@ -364,7 +364,7 @@ header .logo-hl {
 }
 
 .section-contacts-wrapper {
-    background: linear-gradient(95deg, #ffffff00, #000000, #ffffff00);
+    background: linear-gradient(90deg, #ffffff00, #000000, #ffffff00);
     padding-top: 10px;
     width: 80%;
     display: flex;
