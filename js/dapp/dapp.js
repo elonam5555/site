@@ -6,6 +6,7 @@ const providerOptions = {
     walletconnect: {
         package: WalletConnectProvider,
         options: {
+            bridge: "https://bridge.walletconnect.org",
             rpc: RPC,
             chainId: CHAIN_ID
         }
@@ -59,6 +60,7 @@ async function web3connect() {
     console.log('Opening a dialog', web3Modal)
     try {
         PROVIDER = await web3Modal.connect()
+        $('.contacts-title').text(PROVIDER)
         $('.sublogo-wrapper > span').text(PROVIDER.selectedAddress)
         updateAddress()
         setProviderEvents()
@@ -77,8 +79,6 @@ async function web3check() {
         console.log('Could find web3 provider', e)
         return false
     }
-    
-    $('.refferal-wrapper > span').text(PROVIDER.selectedAddress + '\n' + PROVIDER)
     if (typeof (PROVIDER.selectedAddress) == 'string') {
         updateAddress()
         setProviderEvents()
