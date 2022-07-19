@@ -22,18 +22,20 @@
     height: 100%;
     max-width: 100%;
     min-height: 100%;
+    overflow-x: hidden;
 }
 
 header {
+    background: linear-gradient(0deg, #ffffff00, #000000aa, #000000);
     padding-top: 10px;
 }
 
-.logo-wrapper {
+header .logo-wrapper {
     display: flex;
     justify-content: center;
 }
 
-.logo {
+header .logo {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -41,20 +43,20 @@ header {
     color: #f5deb3;
 }
 
-.logo > span {
+header .logo > span {
     text-align: center;
 }
 
-.logo > span:first-child {
+header .logo > span:first-child {
     font-size: 60px;
     margin-bottom: -5px;
 }
 
-.logo > span:last-child {
+header .logo > span:last-child {
     font-size: 40px;
 }
 
-.logo-hl {
+header .logo-hl {
     margin: 5px 0;
     height: 2px;
     width: 300%;
@@ -227,6 +229,10 @@ header {
     text-align: center;
 }
 
+.refferal-wrapper > span > span {
+    color: #eb9900;
+}
+
 .refferal-link-wrapper {
     box-sizing: border-box;
     display: flex;
@@ -297,35 +303,63 @@ header {
     text-align: center;
 }
 
-.contact-wrapper {
+.contacts-wrapper {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     padding-top: 10px;
 }
 
-.contact-row {
+.contacts-row {
     width: 100%;
-    padding-top: 5px;
     display: flex;
     justify-content: center;
 }
 
-.contact-row > span {
+.contacts-row > span {
     font-family: 'Roboto';
     color: #ffffff;
     font-size: 20px;
     text-align: center;
 }
 
-.contact-row > span > a {
+.contacts-row > span > a {
     text-decoration: none;
     font-weight: bold;
     color: #f5deb3;
     transition: color 0.25s ease;
 }
 
-.contact-row > span > a:hover {
+.contacts-row > span > a:hover {
     color: #eb9900;
+}
+
+.contacts-hl {
+    margin: 10px 0;
+    height: 1px;
+    width: 30%;
+    background: linear-gradient(90deg, #ffffff00, #f5deb3, #ffffff00);
+}
+
+footer {
+    padding: 25px 0px;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(0deg, #000000, #ffffff00);
+}
+
+.footer-wrapper {
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+footer .logo {
+    display: flex;
+    flex-direction: row;
+    font-family: "CarterOne";
+    font-size: 25px;
+    color: #f5deb3
 }

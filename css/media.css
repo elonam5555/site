@@ -1,10 +1,10 @@
 @media screen and (max-width: 620px) {
-    .logo-hl {
+    header .logo-hl {
         width: 200%;
     }
 }
 
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 580px) {
     .menu-wrapper {
         flex-direction: column;
     }
@@ -14,7 +14,7 @@
         justify-content: space-between;
         margin: 0;
     }
-    
+
     .menu-element > a {
         margin: 0 0 2px 0;
         width: 200px;
@@ -29,26 +29,42 @@
     .menu-vl.mobile {
         display: block;
     }
-    
+
     .refferal-title {
         font-size: 30px;
     }
-    
+
     .refferal-wrapper > span {
         font-size: 17px;
     }
-    
+
     .refferal-link {
         font-size: 17px;
     }
-    
+
     .contacts-title {
         font-size: 30px;
+    }
+
+    .contacts-row > span {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    footer .logo {
+        font-size: 20px;
     }
 }
 
 @media screen and (max-width: 420px) {
     .logo-hl {
         width: 150%;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    footer .logo {
+        font-size: 16px;
     }
 }
