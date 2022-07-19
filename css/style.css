@@ -1,0 +1,336 @@
+@font-face {
+    font-family: "CarterOne";
+    src: url("../fonts/CarterOne/CarterOne-Regular.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto/Roboto-Regular.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+html {
+    height: 100%;
+}
+
+.body {
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    min-height: 100%;
+}
+
+header {
+    padding-top: 10px;
+}
+
+.logo-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "CarterOne";
+    color: #f5deb3;
+}
+
+.logo > span {
+    text-align: center;
+}
+
+.logo > span:first-child {
+    font-size: 60px;
+    margin-bottom: -5px;
+}
+
+.logo > span:last-child {
+    font-size: 40px;
+}
+
+.logo-hl {
+    margin: 5px 0;
+    height: 2px;
+    width: 300%;
+    background: linear-gradient(90deg, #ffffff00, #f5deb3, #ffffff00);
+}
+
+.sublogo-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sublogo-wrapper > span {
+    padding-top: 5px;
+    font-family: "Roboto";
+    color: #ffffff;
+}
+
+.social-and-connect-wrapper {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.connect-button {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    border: 2px solid #f5deb3;
+    border-radius: 10px;
+    background: #ffffff00;
+    cursor: pointer;
+    transition: border-color 0.5s ease;
+}
+
+.connect-button:hover {
+    border-color: #f5deb390;
+}
+
+.connect-button > img {
+    margin-left: 5px;
+    width: 25px;
+    height: 25px;
+    transition: opacity 0.5s ease;
+}
+
+.connect-button:hover > img {
+    opacity: 75%;
+}
+
+.connect-button > span {
+    padding-top: 3px;
+    margin: 0 10px;
+    font-family: "Roboto";
+    font-weight: bold;
+    color: #ffffff;
+    transition: color 0.25s ease;
+}
+
+.connect-button:hover > span {
+    color: #eb9900;
+}
+
+.social-telegram {
+    margin-left: 10px;
+    padding: 5px;
+    width: 25px;
+    height: 25px;
+    border: 2px solid #f5deb3;
+    border-radius: 10px;
+    transition: border-color 0.5s ease;
+}
+
+.social-telegram:hover {
+    border-color: #f5deb390;
+}
+
+.social-telegram > a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    filter: invert(88%) sepia(0%) saturate(6663%) hue-rotate(329deg) brightness(125%) contrast(104%);
+    background: url(../img/social/telegram.svg);
+    background-size: 100% 100%;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+}
+
+.social-telegram:hover > a {
+    filter: invert(64%) sepia(43%) saturate(4788%) hue-rotate(11deg) brightness(104%) contrast(101%);
+}
+
+.menu-wrapper {
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-element {
+    display: flex;
+    align-items: center;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.menu-element > a {
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.25s ease;
+}
+
+.menu-element:hover > a {
+    color: #eb9900;
+}
+
+.menu-vl {
+    margin-right: 10px;
+    height: 30px;
+    width: 2px;
+    background: linear-gradient(0deg, #ffffff00, #f5deb3, #ffffff00);
+}
+
+.menu-vl:last-child {
+    margin-left: 10px;
+}
+
+.menu-vl.mobile {
+    display: none;
+}
+
+.section-refferal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-refferal-wrapper {
+    padding-top: 10px;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.refferal-title {
+    font-family: 'Roboto';
+    color: #f5deb3;
+    font-size: 35px;
+    text-align: center;
+}
+
+.refferal-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.refferal-wrapper > span {
+    padding-top: 5px;
+    font-family: "Roboto";
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+}
+
+.refferal-link-wrapper {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #f5deb3;
+    padding: 5px 20px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.refferal-link {
+    display: inline-block;
+    font-family: 'Roboto';
+    color: #ffffffaa;
+    font-size: 20px;
+}
+
+.refferal-link.active {
+    cursor: pointer;
+    color: #f5ae5e;
+}
+
+.refferal-link:hover.active {
+    color: #ff8800;
+}
+
+.button-copy {
+    width: 17px;
+    height: 17px;
+    position: relative;
+    background: transparent;
+    border: 0px;
+    margin-left: 3px;
+}
+
+.button-copy::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/copy.svg);
+    background-position: top center;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+    background-repeat: no-repeat;
+}
+
+.section-contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-contacts-wrapper {
+    padding-top: 10px;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacts-title {
+    font-family: 'Roboto';
+    color: #f5deb3;
+    font-size: 35px;
+    text-align: center;
+}
+
+.contact-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 10px;
+}
+
+.contact-row {
+    width: 100%;
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-row > span {
+    font-family: 'Roboto';
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+}
+
+.contact-row > span > a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #f5deb3;
+    transition: color 0.25s ease;
+}
+
+.contact-row > span > a:hover {
+    color: #eb9900;
+}

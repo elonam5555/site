@@ -1,0 +1,54 @@
+@media screen and (max-width: 620px) {
+    .logo-hl {
+        width: 200%;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .menu-wrapper {
+        flex-direction: column;
+    }
+
+    .menu-element {
+        width: 240px;
+        justify-content: space-between;
+        margin: 0;
+    }
+    
+    .menu-element > a {
+        margin: 0 0 2px 0;
+        width: 200px;
+        justify-content: space-between;
+        margin: 0;
+    }
+
+    .menu-vl {
+        margin: 0 10px;
+    }
+
+    .menu-vl.mobile {
+        display: block;
+    }
+    
+    .refferal-title {
+        font-size: 30px;
+    }
+    
+    .refferal-wrapper > span {
+        font-size: 17px;
+    }
+    
+    .refferal-link {
+        font-size: 17px;
+    }
+    
+    .contacts-title {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .logo-hl {
+        width: 150%;
+    }
+}
