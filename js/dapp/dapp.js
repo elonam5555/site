@@ -52,10 +52,6 @@ function setProviderEvents() {
 }
 
 async function web3connect() {
-    if (await web3check()) {
-        return true
-    }
-
     console.log('Opening a dialog', web3Modal)
     try {
         PROVIDER = await web3Modal.connect()
