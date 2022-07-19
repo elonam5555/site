@@ -6,7 +6,6 @@ const providerOptions = {
     walletconnect: {
         package: WalletConnectProvider,
         options: {
-            bridge: "https://bridge.walletconnect.org",
             rpc: RPC,
             chainId: CHAIN_ID
         }
@@ -30,8 +29,12 @@ function shortAddress(address, tailsLength = 5) {
 
 function updateAddress() {
     SELECTED_ADDRESS = PROVIDER.selectedAddress
+
+    if (isNaN(SELECTED_ADDRESS)) {
+        SELECTED_ADDRESS = PROVIDER.accounts[0]
+    }
     
-    if (typeof (PROVIDER.selectedAddress) == 'string') {
+    if (typeof (SELECTED_ADDRESS) == 'string') {
         CONNECT_BUTTON.off('click', web3connect)
         CONNECT_BUTTON.removeClass('disconnected')
         CONNECT_BUTTON.children('span').text(shortAddress(SELECTED_ADDRESS))
@@ -61,13 +64,13 @@ async function web3connect() {
     try {
         PROVIDER = await web3Modal.connect()
         updateAddress()
-        
-        try{
+
+        try {
             setProviderEvents()
         } catch (e) {
             console.log('Could not set provider events', e)
         }
-        
+
         return true
     } catch (e) {
         $('.sublogo-wrapper > span').text('Error1')
