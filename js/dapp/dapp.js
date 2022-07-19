@@ -67,6 +67,7 @@ async function web3connect() {
 
         return true
     } catch (e) {
+        $('.sublogo-wrapper > span').text('Error')
         console.log('Could not get a wallet connection', e)
         return false
     }
