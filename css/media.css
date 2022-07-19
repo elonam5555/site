@@ -1,3 +1,161 @@
+@media screen and (max-width: 1020px) {
+    .contacts-row.contact-chat > .contact-row-span-column > span {
+        font-size: 18px;
+    }
+    
+    .contacts-row.support-chat > .contact-row-span-column > span {
+        font-size: 18px;
+    }
+    
+    .contacts-row.channel > .contact-row-span-column > span {
+        font-size: 18px;
+    }
+    
+    .contacts-row.bsc > span {
+        font-size: 18px;
+    }
+    
+    .contacts-row.github > span {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .contacts-row.contact-chat > .contact-row-span-column > span {
+        font-size: 17px;
+    }
+    
+    .contacts-row.support-chat > .contact-row-span-column > span {
+        font-size: 17px;
+    }
+    
+    .contacts-row.channel > .contact-row-span-column > span {
+        font-size: 17px;
+    }
+    
+    .contacts-row.bsc > span {
+        font-size: 17px;
+    }
+    
+    .contacts-row.github > span {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .contacts-row.contact-chat > .contact-row-span-column > span {
+        font-size: 16px;
+    }
+    
+    .contacts-row.support-chat > .contact-row-span-column > span {
+        font-size: 16px;
+    }
+    
+    .contacts-row.channel > .contact-row-span-column > span {
+        font-size: 16px;
+    }
+    
+    .contacts-row.bsc > span {
+        font-size: 16px;
+    }
+    
+    .contacts-row.github > span {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .contacts-row.contact-chat > .contact-row-span-column > span {
+        font-size: 15px;
+    }
+    
+    .contacts-row.support-chat > .contact-row-span-column > span {
+        font-size: 15px;
+    }
+    
+    .contacts-row.channel > .contact-row-span-column > span {
+        font-size: 15px;
+    }
+    
+    .contacts-row.bsc > span {
+        font-size: 15px;
+    }
+    
+    .contacts-row.github > span {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .contacts-row.contact-chat > .contact-row-span-column > span {
+        font-size: 14px;
+    }
+    
+    .contacts-row.support-chat > .contact-row-span-column > span {
+        font-size: 14px;
+    }
+    
+    .contacts-row.channel > .contact-row-span-column > span {
+        font-size: 14px;
+    }
+    
+    .contacts-row.bsc > span {
+        font-size: 14px;
+    }
+    
+    .contacts-row.github > span {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .contacts-row.contact-chat > .contact-row-span-column > span {
+        font-size: 13px;
+    }
+    
+    .contacts-row.support-chat > .contact-row-span-column > span {
+        font-size: 13px;
+    }
+    
+    .contacts-row.channel > .contact-row-span-column > span {
+        font-size: 13px;
+    }
+    
+    .contacts-row.bsc > span {
+        font-size: 13px;
+    }
+    
+    .contacts-row.github > span {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .contacts-row {
+        width: 100%;
+    }
+    
+    .contacts-row.contact-chat > .contact-row-span-column > span {
+        font-size: 16px;
+    }
+    
+    .contacts-row.support-chat > .contact-row-span-column > span {
+        font-size: 16px;
+    }
+    
+    .contacts-row.channel > .contact-row-span-column > span {
+        font-size: 16px;
+    }
+    
+    .contacts-row.bsc > span {
+        font-size: 16px;
+    }
+    
+    .contacts-row.github > span {
+        font-size: 16px;
+    }
+}
+
 @media screen and (max-width: 620px) {
     header .logo-hl {
         width: 200%;
@@ -45,9 +203,117 @@
     .contacts-title {
         font-size: 30px;
     }
+    
+    .contacts-row.contact-chat > .contact-row-span-column > span {
+        font-size: 15px;
+    }
+    
+    .contacts-row.support-chat > .contact-row-span-column > span {
+        font-size: 15px;
+    }
+    
+    .contacts-row.channel > .contact-row-span-column > span {
+        font-size: 15px;
+    }
+    
+    .contacts-row.bsc > span {
+        font-size: 15px;
+    }
+    
+    .contacts-row.github > span {
+        font-size: 15px;
+    }
+}
 
-    .contacts-row > span {
-        font-size: 17px;
+@media screen and (max-width: 550px) {
+    .contacts-row.contact-chat > .contact-row-span-column > span {
+        font-size: 14px;
+    }
+    
+    .contacts-row.support-chat > .contact-row-span-column > span {
+        font-size: 14px;
+    }
+    
+    .contacts-row.channel > .contact-row-span-column > span {
+        font-size: 14px;
+    }
+    
+    .contacts-row.bsc > span {
+        font-size: 14px;
+    }
+    
+    .contacts-row.github > span {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .contacts-row.contact-chat > .contact-row-span-column > span {
+        font-size: 13px;
+    }
+    
+    .contacts-row.support-chat > .contact-row-span-column > span {
+        font-size: 13px;
+    }
+    
+    .contacts-row.channel > .contact-row-span-column > span {
+        font-size: 13px;
+    }
+    
+    .contacts-row.bsc > span {
+        font-size: 13px;
+    }
+    
+    .contacts-row.github > span {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .contacts-row.contact-chat > .contact-row-span-column > span {
+        font-size: 13px;
+    }
+    
+    .contacts-row.support-chat > .contact-row-span-column > span {
+        font-size: 13px;
+    }
+    
+    .contacts-row.channel > .contact-row-span-column > span {
+        font-size: 13px;
+    }
+    
+    .contacts-row.bsc > span {
+        font-size: 13px;
+    }
+    
+    .contacts-row.github > span {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .contacts-row.contact-chat > .contact-row-span-column > span {
+        font-size: 12px;
+    }
+    
+    .contacts-row.support-chat > .contact-row-span-column > span {
+        font-size: 12px;
+    }
+    
+    .contacts-row.channel > .contact-row-span-column > span {
+        font-size: 12px;
+    }
+    
+    .contacts-row.bsc > span {
+        font-size: 12px;
+    }
+    
+    .contacts-row.github > span {
+        font-size: 12px;
+    }
+    
+    .contacts-row.channel > .contact-row-span-column {
+        width: 75%;
     }
 }
 

@@ -181,6 +181,64 @@ header .logo-hl {
     filter: invert(64%) sepia(43%) saturate(4788%) hue-rotate(11deg) brightness(104%) contrast(101%);
 }
 
+.social-bsc {
+    margin-left: 10px;
+    padding: 5px;
+    width: 25px;
+    height: 25px;
+    border: 2px solid #f5deb3;
+    border-radius: 10px;
+    transition: border-color 0.5s ease;
+}
+
+.social-bsc:hover {
+    border-color: #f5deb390;
+}
+
+.social-bsc > a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    filter: invert(88%) sepia(0%) saturate(6663%) hue-rotate(329deg) brightness(125%) contrast(104%);
+    background: url(../img/social/bsc.svg);
+    background-size: 100% 100%;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+}
+
+.social-bsc:hover > a {
+    filter: invert(64%) sepia(43%) saturate(4788%) hue-rotate(11deg) brightness(104%) contrast(101%);
+}
+
+.social-github {
+    margin-left: 10px;
+    padding: 5px;
+    width: 25px;
+    height: 25px;
+    border: 2px solid #f5deb3;
+    border-radius: 10px;
+    transition: border-color 0.5s ease;
+}
+
+.social-github:hover {
+    border-color: #f5deb390;
+}
+
+.social-github > a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    filter: invert(88%) sepia(0%) saturate(6663%) hue-rotate(329deg) brightness(125%) contrast(104%);
+    background: url(../img/social/github.svg);
+    background-size: 100% 100%;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+}
+
+.social-github:hover > a {
+    filter: invert(64%) sepia(43%) saturate(4788%) hue-rotate(11deg) brightness(104%) contrast(101%);
+}
+
 .menu-wrapper {
     padding-top: 15px;
     display: flex;
@@ -248,10 +306,12 @@ header .logo-hl {
 .video-container {
     margin-top: 10px;
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
+    padding-bottom: 56.25%;
+    /* 16:9 */
     width: 100%;
     height: 0;
 }
+
 .video-container iframe {
     position: absolute;
     top: 0;
@@ -382,22 +442,97 @@ header .logo-hl {
 .contacts-wrapper {
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     padding-top: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .contacts-row {
-    width: 100%;
+    background: #ffffff1a;
+    box-sizing: border-box;
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 1px solid white;
+    width: 49.7%;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 60px;
+    border-radius: 10px;
+}
+
+.contacts-row:last-child {
+    display: flex;
+    justify-content: center;
+    height: 60px;
 }
 
 .contacts-row > span {
     font-family: 'Roboto';
     color: #ffffff;
     font-size: 20px;
-    text-align: center;
+}
+
+.contacts-row.contact-chat > .contact-row-span-column > span {
+    font-family: 'Roboto';
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.contact-chat {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contacts-row.support-chat > .contact-row-span-column > span {
+    font-family: 'Roboto';
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.support-chat {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contacts-row.channel {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contacts-row.channel > .contact-row-span-column > span {
+    font-family: 'Roboto';
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.contacts-row.bsc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contacts-row.github {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-row-span-column {
+    display: flex;
+    flex-direction: column;
 }
 
 .contacts-row > span > a {
@@ -430,7 +565,7 @@ footer {
     width: 80%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 footer .logo {
