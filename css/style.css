@@ -165,9 +165,9 @@ header .logo-hl {
 
 .sublogo-wrapper > span {
     padding-top: 5px;
-    letter-spacing: 0.8px;
+    letter-spacing: 0.5px;
     font-family: "Roboto";
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
     color: #ffffff;
 }
