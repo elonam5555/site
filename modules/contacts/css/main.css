@@ -142,9 +142,9 @@
 }
 
 .contacts-section .rocket {
-    transform: rotate(20deg);
     height: 35px;
     width: 35px;
+    transform: rotate(45deg);
 }
 
 .contacts-section .rocket > span {

@@ -1,4 +1,8 @@
 @media screen and (max-width: 680px) {
+    header {
+        background: linear-gradient(0deg, #ffffff00, #000000 75%, #fce10069 110%);
+    }
+
     .menu-wrapper {
         flex-direction: column;
     }
