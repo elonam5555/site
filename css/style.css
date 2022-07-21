@@ -375,14 +375,15 @@ header .logo-hl {
 
 .menu-element {
     display: flex;
+    background: radial-gradient(ellipse at bottom, #38507c66 0%, #38507c33 100%);
     align-items: center;
-    margin-left: 10px;
     font-family: "Roboto";
     font-size: 20px;
     font-weight: bold;
 }
 
 .menu-element > a {
+    padding-right: 10px;
     text-decoration: none;
     color: #ffffff;
     transition: color 0.25s ease;
@@ -402,7 +403,7 @@ header .logo-hl {
 }
 
 .menu-vl:last-child {
-    margin-left: 10px;
+    margin-right: 0px;
 }
 
 .menu-vl.mobile {
