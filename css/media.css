@@ -4,24 +4,20 @@
     }
 
     .menu-element {
-        justify-content: space-between;
+        display: flex;
+        padding: 5px;
+        border-radius: 7px;
+        border: 2px solid #fff;
         margin: 0;
-        width: 240px;
-    }
-
-    .menu-element > a {
-        justify-content: space-between;
-        margin: 0 0 2px 0;
-        margin: 0;
-        width: 200px;
-    }
-
-    .menu-vl {
-        margin: 0 10px;
+        width: 259px;
+        box-sizing: border-box;
+        margin-bottom: 8px;
+        justify-content: center;
+        background: radial-gradient(ellipse at bottom, #0f254ecc 0%, #f7630c22 100%);
     }
 
     .menu-vl.mobile {
-        display: block;
+        display: none;
     }
 
     .refferal-title {
