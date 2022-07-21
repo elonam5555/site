@@ -38,7 +38,7 @@ html {
 .contacts-section li {
     border: 1px solid #ffffff;
     border-radius: 10px;
-    background: #ffffff1a;
+    background: radial-gradient(ellipse at bottom, #0f254ecc 0%, #f7630c22 100%);
 }
 
 .contacts-section li>div>button {
@@ -395,6 +395,8 @@ header .logo-hl {
     padding-right: 10px;
     text-decoration: none;
     color: #ffffff;
+    font-family: 'Roboto';
+    font-size: 17px;
     cursor: pointer;
     transition: color 0.25s ease;
 }

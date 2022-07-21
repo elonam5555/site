@@ -6,6 +6,7 @@
     .menu-element {
         display: flex;
         padding: 5px;
+        height: 39px;
         border-radius: 7px;
         border: 2px solid #fff;
         margin: 0;
@@ -14,6 +15,10 @@
         margin-bottom: 8px;
         justify-content: center;
         background: radial-gradient(ellipse at bottom, #0f254ecc 0%, #f7630c22 100%);
+    }
+
+    .menu-element > a {
+        font-size: 16px;
     }
 
     .menu-vl.mobile {
