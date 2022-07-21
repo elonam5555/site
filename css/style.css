@@ -391,6 +391,7 @@ header .logo-hl {
     display: flex;
     align-items: center;
     background: radial-gradient(ellipse at bottom, #38507c66 0%, #38507c33 100%);
+    box-shadow: 0px 0px 10px #fce10069;
 }
 
 .menu-element > a {
