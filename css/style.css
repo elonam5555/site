@@ -1,16 +1,24 @@
 @font-face {
-    font-family: "CarterOne";
-    src: url("../fonts/CarterOne/CarterOne-Regular.ttf") format('truetype');
-    font-weight: normal;
     font-style: normal;
+    font-family: "CarterOne";
+    font-weight: normal;
+    src: url("../fonts/CarterOne/CarterOne-Regular.ttf") format('truetype');
     font-display: swap;
 }
 
 @font-face {
-    font-family: "Roboto";
-    src: url("../fonts/Roboto/Roboto-Regular.ttf") format('truetype');
-    font-weight: normal;
     font-style: normal;
+    font-family: "Roboto";
+    font-weight: normal;
+    src: url("../fonts/Roboto/Roboto-Regular.ttf") format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-style: normal;
+    font-family: "Roboto";
+    font-weight: 500;
+    src: url("../fonts/Roboto/Roboto-Medium.ttf") format('truetype');
     font-display: swap;
 }
 
@@ -18,14 +26,61 @@ html {
     overflow-x: hidden;
 }
 
+.contacts-section {
+    z-index: 10;
+    background: linear-gradient(90deg, #ffffff00, #000000, #ffffff00);
+}
+
+.contacts-section span {
+    color: #fff;
+}
+
+.contacts-section li {
+    background: #ffffff1a;
+    border-radius: 10px;
+    border: 1px solid #ffffff;
+}
+
+.contacts-section li>div>button {
+    border: 1px solid #fff;
+    background: black;
+}
+
+.contacts-section li>div>button:hover {
+    border: 1px solid #000;
+    background: #fff;
+}
+
+.contacts-section li>div>button:hover > span {
+    color: #000;
+}
+
+.contacts-section .social {
+    background: #000;
+    border: 2px solid #fff;
+}
+
+.contacts-section .social:hover {
+    background: #fff;
+    border-color:#000;
+}
+
+.contacts-section .social > a {
+    filter: invert(100%) sepia(14%) saturate(95%) hue-rotate(186deg) brightness(115%) contrast(100%);
+}
+
+.contacts-section .social:hover > a {
+    filter: invert(0%) sepia(2%) saturate(3%) hue-rotate(347deg) brightness(96%) contrast(100%);
+}
+
 .body {
-    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
     display: flex;
     flex-direction: column;
-    width: 100%;
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    min-height: 100%;
     height: 100%;
     max-width: 100%;
-    min-height: 100%;
+    width: 100%;
     overflow-x: hidden;
     overflow-y: hidden;
 }
@@ -45,7 +100,7 @@ header .logo {
     flex-direction: column;
     align-items: center;
     font-family: "CarterOne";
-    color: #f4faff
+    color: #f4faff;
 }
 
 header .logo > span {
@@ -53,8 +108,8 @@ header .logo > span {
 }
 
 header .logo > span:first-child {
-    font-size: 60px;
     margin-bottom: -5px;
+    font-size: 60px;
 }
 
 header .logo > span:last-child {
@@ -63,23 +118,23 @@ header .logo > span:last-child {
 
 header .logo-hl {
     margin: 5px 0;
+    background: linear-gradient(90deg, #ffffff00, #f4faff, #ffffff00);
     height: 2px;
     width: 300%;
-    background: linear-gradient(90deg, #ffffff00, #f4faff, #ffffff00);
 }
 
 .sublogo-wrapper {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
 .sublogo-wrapper > span {
     padding-top: 5px;
-    font-size: 20px;
     letter-spacing: 0.8px;
     font-family: "Roboto";
+    font-size: 20px;
     font-weight: bold;
     color: #ffffff;
 }
@@ -89,8 +144,8 @@ header .logo-hl {
 }
 
 .sublogo-wrapper > span:nth-child(2) {
-    color: #e15151;
     margin: 0 25px;
+    color: #e15151;
 }
 
 .sublogo-wrapper > span:last-child {
@@ -98,21 +153,21 @@ header .logo-hl {
 }
 
 .social-and-connect-wrapper {
-    padding-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 10px;
 }
 
 .connect-button {
-    width: 175px;
-    padding: 5px;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     border: 2px solid #f5deb3;
     border-radius: 10px;
     background: #ffffff00;
+    width: 175px;
+    padding: 5px;
     transition: border-color 0.5s ease;
 }
 
@@ -126,8 +181,8 @@ header .logo-hl {
 
 .connect-button > img {
     margin-left: 5px;
-    width: 25px;
     height: 25px;
+    width: 25px;
     transition: opacity 0.5s ease;
 }
 
@@ -136,8 +191,8 @@ header .logo-hl {
 }
 
 .connect-button > span {
-    padding-top: 3px;
     margin: 0 10px;
+    padding-top: 3px;
     font-family: "Roboto";
     font-weight: bold;
     color: #ffffff;
@@ -153,12 +208,13 @@ header .logo-hl {
 }
 
 .social-telegram {
-    margin-left: 10px;
-    padding: 5px;
-    width: 25px;
-    height: 25px;
     border: 2px solid #f5deb3;
     border-radius: 10px;
+    margin-left: 10px;
+    background: #000000;
+    height: 25px;
+    width: 25px;
+    padding: 5px;
     transition: border-color 0.5s ease;
 }
 
@@ -167,14 +223,14 @@ header .logo-hl {
 }
 
 .social-telegram > a {
-    display: block;
-    height: 100%;
-    width: 100%;
     filter: invert(88%) sepia(0%) saturate(6663%) hue-rotate(329deg) brightness(125%) contrast(104%);
+    display: block;
     background: url(../img/social/telegram.svg);
     background-size: 100% 100%;
-    background-origin: content-box;
     background-repeat: no-repeat;
+    background-origin: content-box;
+    height: 100%;
+    width: 100%;
 }
 
 .social-telegram:hover > a {
@@ -182,12 +238,13 @@ header .logo-hl {
 }
 
 .social-bsc {
-    margin-left: 10px;
-    padding: 5px;
-    width: 25px;
-    height: 25px;
     border: 2px solid #f5deb3;
     border-radius: 10px;
+    margin-left: 10px;
+    background: #000000;
+    height: 25px;
+    width: 25px;
+    padding: 5px;
     transition: border-color 0.5s ease;
 }
 
@@ -196,14 +253,14 @@ header .logo-hl {
 }
 
 .social-bsc > a {
-    display: block;
-    height: 100%;
-    width: 100%;
     filter: invert(88%) sepia(0%) saturate(6663%) hue-rotate(329deg) brightness(125%) contrast(104%);
+    display: block;
     background: url(../img/social/bsc.svg);
     background-size: 100% 100%;
-    background-origin: content-box;
     background-repeat: no-repeat;
+    background-origin: content-box;
+    height: 100%;
+    width: 100%;
 }
 
 .social-bsc:hover > a {
@@ -211,12 +268,13 @@ header .logo-hl {
 }
 
 .social-github {
-    margin-left: 10px;
-    padding: 5px;
-    width: 25px;
-    height: 25px;
     border: 2px solid #f5deb3;
     border-radius: 10px;
+    margin-left: 10px;
+    background: #000000;
+    height: 25px;
+    width: 25px;
+    padding: 5px;
     transition: border-color 0.5s ease;
 }
 
@@ -225,14 +283,14 @@ header .logo-hl {
 }
 
 .social-github > a {
-    display: block;
-    height: 100%;
-    width: 100%;
     filter: invert(88%) sepia(0%) saturate(6663%) hue-rotate(329deg) brightness(125%) contrast(104%);
+    display: block;
     background: url(../img/social/github.svg);
     background-size: 100% 100%;
-    background-origin: content-box;
     background-repeat: no-repeat;
+    background-origin: content-box;
+    height: 100%;
+    width: 100%;
 }
 
 .social-github:hover > a {
@@ -240,26 +298,26 @@ header .logo-hl {
 }
 
 .menu-wrapper {
-    padding-top: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 15px;
 }
 
 .menu-element {
     display: flex;
     align-items: center;
-    font-family: "Roboto";
-    font-weight: bold;
-    font-size: 20px;
     margin-left: 10px;
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .menu-element > a {
-    text-align: center;
-    color: #ffffff;
     text-decoration: none;
+    color: #ffffff;
     transition: color 0.25s ease;
+    text-align: center;
 }
 
 .menu-element:hover > a {
@@ -268,9 +326,9 @@ header .logo-hl {
 
 .menu-vl {
     margin-right: 10px;
+    background: linear-gradient(0deg, #ffffff00, #f5deb3, #ffffff00);
     height: 30px;
     width: 2px;
-    background: linear-gradient(0deg, #ffffff00, #f5deb3, #ffffff00);
 }
 
 .menu-vl:last-child {
@@ -288,36 +346,36 @@ header .logo-hl {
 }
 
 .section-videoreview-wrapper {
-    padding-top: 10px;
-    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 80%;
+    padding-top: 10px;
 }
 
 .videoreview-title {
     display: none;
     font-family: 'Roboto';
-    color: #f5deb3;
     font-size: 35px;
+    color: #f5deb3;
     text-align: center;
 }
 
 .video-container {
-    margin-top: 10px;
     position: relative;
-    padding-bottom: 56.25%;
+    margin-top: 10px;
+    height: 0;
     /* 16:9 */
     width: 100%;
-    height: 0;
+    padding-bottom: 56.25%;
 }
 
 .video-container iframe {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
     height: 100%;
+    width: 100%;
 }
 
 .section-refferal {
@@ -327,66 +385,66 @@ header .logo-hl {
 }
 
 .section-refferal-wrapper {
-    padding-top: 10px;
-    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
     background: linear-gradient(90deg, #ffffff00, #000000, #ffffff00);
+    width: 80%;
+    padding-top: 10px;
 }
 
 .refferal-title {
     font-family: 'Roboto';
-    color: #f4faff;
     font-size: 35px;
+    color: #f4faff;
     text-align: center;
 }
 
 .refferal-wrapper {
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
     padding-top: 10px;
 }
 
 .refferal-wrapper > span {
     padding-top: 5px;
     font-family: "Roboto";
-    color: #ffffff;
     font-size: 20px;
+    color: #ffffff;
     text-align: center;
 }
 
 .refferal-wrapper > span > span {
-    color: #eb9900;
     font-weight: bold;
+    color: #eb9900;
 }
 
 .refferal-link-wrapper {
-    background: #ffffff1a;
-    box-sizing: border-box;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     border: 1px solid #f5deb3;
-    padding: 5px 20px;
     border-radius: 10px;
     margin-bottom: 5px;
+    background: #ffffff1a;
     height: 60px;
     width: 100%;
+    box-sizing: border-box;
+    padding: 5px 20px;
 }
 
 .refferal-link {
     display: inline-block;
     font-family: 'Roboto';
-    color: #ffffffaa;
     font-size: 20px;
+    color: #ffffffaa;
 }
 
 .refferal-link-wrapper.enable .refferal-link {
-    cursor: pointer;
     color: #eb9900;
+    cursor: pointer;
 }
 
 .refferal-link-wrapper.enable .refferal-link:hover {
@@ -394,165 +452,30 @@ header .logo-hl {
 }
 
 .button-copy {
-    width: 20px;
-    height: 20px;
     position: relative;
-    background: transparent;
     border: 0px;
     margin-left: 3px;
+    background: transparent;
+    height: 20px;
+    width: 20px;
 }
 
 .button-copy::after {
     position: absolute;
-    content: "";
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    content: "";
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
     background-image: url(../img/copy.svg);
     background-position: top center;
-    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
     background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
 }
 
 .refferal-link-wrapper.enable .button-copy:hover::after {
     filter: invert(64%) sepia(43%) saturate(4788%) hue-rotate(11deg) brightness(104%) contrast(101%);
     cursor: pointer;
-}
-
-.section-contacts {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.section-contacts-wrapper {
-    background: linear-gradient(90deg, #ffffff00, #000000, #ffffff00);
-    padding-top: 10px;
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.contacts-title {
-    font-family: 'Roboto';
-    color: #f4faff;
-    font-size: 35px;
-    text-align: center;
-}
-
-.contacts-wrapper {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding-top: 10px;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.contacts-row {
-    background: #ffffff1a;
-    box-sizing: border-box;
-    padding: 5px;
-    margin-bottom: 5px;
-    border: 1px solid white;
-    width: 49.7%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: flex-start;
-    height: 60px;
-    border-radius: 10px;
-}
-
-.contacts-row:last-child {
-    display: flex;
-    justify-content: center;
-    height: 60px;
-}
-
-.contacts-row > span {
-    font-family: 'Roboto';
-    color: #ffffff;
-    font-size: 20px;
-}
-
-.contacts-row.contact-chat > .contact-row-span-column > span {
-    font-family: 'Roboto';
-    color: #ffffff;
-    font-size: 20px;
-}
-
-.contact-chat {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.contacts-row.support-chat > .contact-row-span-column > span {
-    font-family: 'Roboto';
-    color: #ffffff;
-    font-size: 20px;
-}
-
-.support-chat {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.contacts-row.channel {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.contacts-row.channel > .contact-row-span-column > span {
-    font-family: 'Roboto';
-    color: #ffffff;
-    font-size: 20px;
-}
-
-.contacts-row.bsc {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.contacts-row.github {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.contact-row-span-column {
-    display: flex;
-    flex-direction: column;
-}
-
-.contacts-row > span > a {
-    text-decoration: none;
-    font-weight: bold;
-    color: #ffcc00;
-    transition: color 0.25s ease;
-}
-
-.contacts-row > span > a:hover {
-    color: #eb9900;
-}
-
-.contacts-hl {
-    margin: 10px 0;
-    height: 1px;
-    width: 30%;
-    background: linear-gradient(90deg, #ffffff00, #f5deb3, #ffffff00);
 }
 
 footer {
@@ -562,12 +485,12 @@ footer {
 }
 
 .footer-wrapper {
-    background: linear-gradient(90deg, #ffffff00, #000000, #ffffff00);
-    padding: 25px 0px;
-    width: 80%;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #ffffff00, #000000, #ffffff00);
+    width: 80%;
+    padding: 25px 0px;
 }
 
 footer .logo {

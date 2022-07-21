@@ -17,3 +17,9 @@ $(function () {
     scrollToTop()
     $('.contacts-link').on('click', scrollToBottom)
 })
+
+$(document).ready(function() {
+    $('.contacts-section li>div>button').tooltipster({
+        theme: 'tooltipster-noir'
+    });
+});

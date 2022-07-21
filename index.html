@@ -7,20 +7,28 @@
     <title>ROCKET Mini Game</title>
     <meta name="description" content="">
 
-    <!-- Styles -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/media.css">
-    <!-- /Styles -->
+    <!-- Contacts -->
+    <link rel="stylesheet" type="text/css" href="contacts/css/main.css">
+    <link rel="stylesheet" type="text/css" href="contacts/css/media.css">
+    
+    <link rel="stylesheet" type="text/css" href="contacts/css/libs/tooltipster.bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="contacts/css/libs/tooltipster-sideTip-noir.css">
+    <!-- /Contacts -->
 
     <!-- StylesLib -->
     <link rel="stylesheet" type="text/css" href="css/libs/stars.css">
     <link rel="stylesheet" type="text/css" href="css/libs/normalize.min.css">
     <!-- /StylesLib -->
+
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/media.css">
+    <!-- /Styles -->
 </head>
 
-<div id="stars0"></div>
-<div id="stars1"></div>
-<div id="stars2"></div>
+<div id="stars0" style="z-index: 10"></div>
+<div id="stars1" style="z-index: 10"></div>
+<div id="stars2" style="z-index: 10"></div>
 
 <body class="body">
     <header>
@@ -99,50 +107,68 @@
             </div>
         </div>
     </section>
-    <section class="section-contacts">
-        <div class="section-contacts-wrapper">
-            <span class="contacts-title">Наши контакты</span>
-            <div class="contacts-wrapper">
-                <div class="contacts-row contact-chat">
-                    <div class="contact-row-span-column">
-                        <span>Вы новичок? Нужна помощь?</span>
-                        <span>
-                            В чате вам ответят на все вопросы
-                        </span>
-                    </div>
-                    <div class="social-telegram-wrapper">
-                        <div class="social-telegram">
+    <section class="contacts-section">
+        <div class="section-wrapper contacts">
+            <span>Наши контакты🖖</span>
+            <ul>
+                <li>
+                    <span>Чат💬</span>
+                    <div class="social-wrapper">
+                        <div class="rocket">
+                            <span></span>
+                        </div>
+                        <button title="Задать вопросы и получить ответы">
+                            <span>i</span>
+                        </button>
+                        <div class="social telegram">
                             <a href="#" target="_blank"></a>
                         </div>
                     </div>
-                </div>
-                <div class="contacts-row channel">
-                    <div class="contact-row-span-column">
-                        <span>Подписывайтесь на наш канал</span>
-                    </div>
-                    <div class="social-telegram-wrapper">
-                        <div class="social-telegram">
+                </li>
+                <li>
+                    <span>Канал📢</span>
+                    <div class="social-wrapper">
+                        <div class="rocket">
+                            <span></span>
+                        </div>
+                        <button title="Быть в курсе новостей">
+                            <span>i</span>
+                        </button>
+                        <div class="social telegram">
                             <a href="#" target="_blank"></a>
                         </div>
                     </div>
-                </div>
-                <div class="contacts-row bsc">
-                    <span>Адрес нашего смарт-контракта</span>
-                    <div class="social-bsc-wrapper">
-                        <div class="social-bsc">
+                    
+                </li>
+                <li>
+                    <span>BSCScan🔎</span>
+                    <div class="social-wrapper">
+                        <div class="rocket">
+                            <span></span>
+                        </div>
+                        <button title="Изучить код контракта и все транзации">
+                            <span>i</span>
+                        </button>
+                        <div class="social bsc">
                             <a href="#" target="_blank"></a>
                         </div>
                     </div>
-                </div>
-                <div class="contacts-row github">
-                    <span>Наш проект на GitHub</span>
-                    <div class="social-github-wrapper">
-                        <div class="social-github">
+                </li>
+                <li>
+                    <span>GitHub📄</span>
+                    <div class="social-wrapper">
+                        <div class="rocket">
+                            <span></span>
+                        </div>
+                        <button title="Разобраться в исходном коде проекта">
+                            <span>i</span>
+                        </button>
+                        <div class="social github">
                             <a href="#" target="_blank"></a>
                         </div>
                     </div>
-                </div>
-            </div>
+                </li>
+            </ul>
         </div>
     </section>
     <footer>
@@ -160,6 +186,7 @@
 <script type="text/javascript" src="js/libs/web3.min.js"></script>
 <script type="text/javascript" src="js/libs/web3-provider.min.js"></script>
 <script type="text/javascript" src="js/libs/web3modal.min.js"></script>
+<script type="text/javascript" src="contacts/js/libs/tooltipster.bundle.min.js"></script>
 <!-- /Libs -->
 
 <!-- dAPP -->
@@ -169,4 +196,13 @@
 
 <!-- JS -->
 <script type="text/javascript" src="js/main.js"></script>
-<!-- /JS --></html>
+
+<script>
+    $(document).ready(function() {
+        $('.contacts-section li>div>button').tooltipster({
+            theme: 'tooltipster-noir'
+        });
+    });
+</script>
+<!-- /JS -->
+</html>
