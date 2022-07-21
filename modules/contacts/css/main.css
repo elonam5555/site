@@ -147,7 +147,6 @@
 }
 
 .contacts-section .rocket > span {
-    filter: invert(0%) sepia(0%) saturate(18%) hue-rotate(325deg) brightness(106%) contrast(106%);
     display: block;
     background: url(../img/rocket.svg);
     background-size: 100% 100%;
