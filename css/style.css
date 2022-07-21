@@ -90,6 +90,7 @@ html {
 header {
     background: linear-gradient(0deg, #ffffff00, #000000 90%);
     padding-top: 10px;
+    z-index: 10;
 }
 
 header .logo-wrapper {
@@ -190,16 +191,51 @@ header .logo-hl {
     padding-top: 10px;
 }
 
+.connect-button-wrapper {
+    z-index: 10;
+}
+
 .connect-button {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    border: 2px solid #f5deb3;
+    border: 2px solid #38507c;
     border-radius: 10px;
-    background: #ffffff00;
-    width: 175px;
+    background: #000;
+    width: 210px;
     padding: 5px;
     transition: border-color 0.5s ease;
+}
+
+.connect-button > img {
+    opacity: 75%;
+    margin-left: 5px;
+    height: 25px;
+    width: 25px;
+    transition: opacity 0.5s ease;
+}
+
+.connect-button > span {
+    display: flex;
+    align-items: center;
+}
+
+.connect-button > span > span:first-child {
+    font-family: "Roboto";
+    font-weight: bold;
+    color: #ffffff;
+    transition: color 0.25s ease;
+    position: relative;
+    right: 4px;
+}
+
+.connect-button > span > span {
+    padding-top: 2px;
+}
+
+.connect-button > span > span:last-child {
+    margin-left: 4%;
+    transition: font-size 0.5s ease;
 }
 
 .connect-button.disconnected {
@@ -207,31 +243,31 @@ header .logo-hl {
 }
 
 .connect-button.disconnected:hover {
-    border-color: #f5deb390;
+    border-color: #f7630c;
 }
 
-.connect-button > img {
-    margin-left: 5px;
-    height: 25px;
-    width: 25px;
-    transition: opacity 0.5s ease;
+.connect-button.disconnected:hover > span > span:last-child {
+    font-size: 18px;
 }
 
 .connect-button.disconnected:hover > img {
-    opacity: 75%;
+    opacity: 100%;
 }
 
-.connect-button > span {
-    margin: 0 10px;
-    padding-top: 3px;
+.connect-button.connected {
+    border-color: #38507cbb;
+}
+
+.connect-button.connected > span > span:first-child {
     font-family: "Roboto";
+    font-size: 18px;
     font-weight: bold;
-    color: #ffffff;
-    transition: color 0.25s ease;
+    color: #f7630c;
+    right: 0px;
 }
 
-.connect-button.connected > span {
-    color: #eb9900;
+.connect-button.connected > img {
+    opacity: 100%;
 }
 
 .connect-button.disconnected:hover > span {
@@ -239,10 +275,10 @@ header .logo-hl {
 }
 
 .social-telegram {
-    border: 2px solid #f5deb3;
+    border: 2px solid #38507c;
     border-radius: 10px;
     margin-left: 10px;
-    background: #000000;
+    background: #000;
     height: 25px;
     width: 25px;
     padding: 5px;
@@ -250,7 +286,7 @@ header .logo-hl {
 }
 
 .social-telegram:hover {
-    border-color: #f5deb390;
+    border-color: #38507cbb;
 }
 
 .social-telegram > a {
@@ -265,7 +301,7 @@ header .logo-hl {
 }
 
 .social-telegram:hover > a {
-    filter: invert(64%) sepia(43%) saturate(4788%) hue-rotate(11deg) brightness(104%) contrast(101%);
+    filter: invert(57%) sepia(29%) saturate(7158%) hue-rotate(351deg) brightness(94%) contrast(107%);
 }
 
 .social-bsc {
@@ -342,6 +378,7 @@ header .logo-hl {
     font-family: "Roboto";
     font-size: 20px;
     font-weight: bold;
+    
 }
 
 .menu-element > a {
@@ -349,6 +386,7 @@ header .logo-hl {
     color: #ffffff;
     transition: color 0.25s ease;
     text-align: center;
+    cursor: pointer;
 }
 
 .menu-element:hover > a {

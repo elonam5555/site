@@ -79,7 +79,7 @@ function updateAddress() {
     if (typeof (SELECTED_ADDRESS) == 'string') {
         CONNECT_BUTTON.off('click', web3connect)
         CONNECT_BUTTON.removeClass('disconnected')
-        CONNECT_BUTTON.children('span').text(shortAddress(SELECTED_ADDRESS))
+        CONNECT_BUTTON.children('span').html('<span>' + shortAddress(SELECTED_ADDRESS) + '</span><span>✔️</span>')
         CONNECT_BUTTON.addClass('connected')
         
         REF_LINK.children('.button-copy').on('click', copyRefLink)
@@ -92,7 +92,7 @@ function updateAddress() {
 
         CONNECT_BUTTON.on('click', web3connect)
         CONNECT_BUTTON.removeClass('connected')
-        CONNECT_BUTTON.children('span').text('ПОДКЛЮЧИТЬ')
+        CONNECT_BUTTON.children('span').html('<span>ПОДКЛЮЧИТЬ</span><span>💰</span>')
         CONNECT_BUTTON.addClass('disconnected')
         
         REF_LINK.children('.button-copy').off('click', copyRefLink)
