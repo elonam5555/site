@@ -89,7 +89,7 @@ html {
 
 header {
     z-index: 10;
-    background: linear-gradient(0deg, #ffffff00, #000000 66%, #fce10069 110%);
+    background: linear-gradient(0deg, #ffffff00, #3e3e3e 60%, #fce10069 68%, #ffffff00 110%);
     padding-top: 25px;
     margin-top: -10px;
     display: flex;
