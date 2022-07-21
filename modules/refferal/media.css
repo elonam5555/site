@@ -1,0 +1,6 @@
+@media screen and (max-width: 780px) {
+    .contacts-section li{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}

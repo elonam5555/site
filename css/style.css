@@ -44,6 +44,7 @@ html {
 .contacts-section li>div>button {
     border: 1px solid #fff;
     background: black;
+    transition: border 500ms ease-out, background-color 0.5s ease;
 }
 
 .contacts-section li>div>button:hover {
@@ -58,6 +59,7 @@ html {
 .contacts-section .social {
     background: #000;
     border: 2px solid #fff;
+    transition: border 500ms ease-out, background-color 0.5s ease;
 }
 
 .contacts-section .social:hover {
@@ -105,6 +107,37 @@ header .logo {
 
 header .logo > span {
     text-align: center;
+    display: flex;
+    margin-bottom: -5px;
+    font-size: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+header .logo > span>span {
+    transform: rotate(180deg);
+    margin: 0 10px;
+    bottom: 11px;
+    position: relative;
+}
+
+
+header .logo .rocket{
+    transform: rotate(-45deg);
+    width: 60px;
+    height: 60px;
+    position: relative;
+    top: 8px;
+}
+
+header .logo .rocket>span {
+    display: block;
+    background: url(../img/rocket.svg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    height: 100%;
+    width: 100%;
 }
 
 header .logo > span:first-child {
@@ -119,8 +152,8 @@ header .logo > span:last-child {
 header .logo-hl {
     margin: 5px 0;
     background: linear-gradient(90deg, #ffffff00, #f4faff, #ffffff00);
-    height: 2px;
-    width: 300%;
+    height: 1px;
+    width: 95%;
 }
 
 .sublogo-wrapper {
@@ -140,16 +173,16 @@ header .logo-hl {
 }
 
 .sublogo-wrapper > span:first-child {
-    color: #1260ef;
+    color: #38507c;
 }
 
 .sublogo-wrapper > span:nth-child(2) {
     margin: 0 25px;
-    color: #e15151;
+    color: #f7630c;
 }
 
 .sublogo-wrapper > span:last-child {
-    color: #ffcc00;
+    color: #fce100;
 }
 
 .social-and-connect-wrapper {
