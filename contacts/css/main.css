@@ -32,9 +32,9 @@
 }
 
 .contacts-section>div>span {
+    margin-bottom: 10px;
     font-family: 'Roboto';
     font-size: 25px;
-    margin-bottom: 10px;
 }
 
 .contacts-section ul {
@@ -81,12 +81,15 @@
 }
 
 .contacts-section li>div>button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 1px solid #000000;
     border-radius: 100%;
+    margin-left: 10px;
     background: transparent;
     height: 25px;
     width: 25px;
-    margin-left: 10px;
     transition: background-color 0.5s ease;
 }
 
@@ -140,9 +143,9 @@
 }
 
 .contacts-section .rocket {
+    transform: rotate(20deg);
     height: 35px;
     width: 35px;
-    transform: rotate(20deg);
 }
 
 .contacts-section .rocket > span {
