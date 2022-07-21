@@ -1,6 +1,6 @@
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 700px) {
     header {
-        background: linear-gradient(0deg, #ffffff00, #000000 75%, #fce10069 110%);
+        background: linear-gradient(0deg, #ffffff00, #3e3e3e 75%, #fce10069 110%);
     }
 
     .menu-wrapper {
@@ -35,7 +35,8 @@
     .menu-vl.mobile {
         display: none;
     }
-
+}
+@media screen and (max-width: 680px) {
     .refferal-title {
         font-size: 30px;
     }

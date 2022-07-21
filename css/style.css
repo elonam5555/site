@@ -89,9 +89,12 @@ html {
 
 header {
     z-index: 10;
-    background: linear-gradient(0deg, #ffffff00, #000000 66%, #fce10069 110%);
+    background: linear-gradient(0deg, #ffffff00, #3e3e3e 65%, #fce10069 110%);
     padding-top: 25px;
     margin-top: -10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header .logo-wrapper {
@@ -191,6 +194,7 @@ header .logo-hl {
     justify-content: center;
     align-items: center;
     padding-top: 10px;
+    width: 80%;
 }
 
 .connect-button-wrapper {
@@ -398,6 +402,7 @@ header .logo-hl {
     cursor: pointer;
     font-weight: bold;
     transition: color 0.25s ease;
+    letter-spacing: 0.5px;
 }
 
 .menu-element > a > spna{
