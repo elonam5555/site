@@ -58,7 +58,7 @@
     align-items: center;
     border: 1px solid #000000;
     margin-bottom: 5px;
-    min-width: 300px;
+    min-width: 290px;
     width: 49%;
     box-sizing: border-box;
     padding: 5px 20px;
@@ -155,4 +155,7 @@
     background-origin: content-box;
     height: 100%;
     width: 100%;
+    position: relative;
+    right: 10px;
+    top: 10px;
 }

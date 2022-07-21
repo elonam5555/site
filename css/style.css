@@ -38,7 +38,7 @@ html {
 .contacts-section li {
     border: 1px solid #ffffff;
     border-radius: 10px;
-    background: radial-gradient(ellipse at bottom, #0f254ecc 0%, #f7630c22 100%);
+    background: #000;
 }
 
 .contacts-section li>div>button {
