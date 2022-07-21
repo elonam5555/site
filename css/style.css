@@ -76,6 +76,8 @@ html {
 }
 
 .body {
+    position: relative;
+    top: -10px;
     display: flex;
     flex-direction: column;
     background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
@@ -378,7 +380,6 @@ header .logo-hl {
     font-family: "Roboto";
     font-size: 20px;
     font-weight: bold;
-    
 }
 
 .menu-element > a {
@@ -390,12 +391,12 @@ header .logo-hl {
 }
 
 .menu-element:hover > a {
-    color: #eb9900;
+    color: #f7630c;
 }
 
 .menu-vl {
     margin-right: 10px;
-    background: linear-gradient(0deg, #ffffff00, #f5deb3, #ffffff00);
+    background: linear-gradient(0deg, #ffffff00, #f7630c, #ffffff00);
     height: 30px;
     width: 2px;
 }
