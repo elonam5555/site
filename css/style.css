@@ -36,9 +36,9 @@ html {
 }
 
 .contacts-section li {
-    background: #ffffff1a;
-    border-radius: 10px;
     border: 1px solid #ffffff;
+    border-radius: 10px;
+    background: #ffffff1a;
 }
 
 .contacts-section li>div>button {
@@ -57,8 +57,8 @@ html {
 }
 
 .contacts-section .social {
-    background: #000;
     border: 2px solid #fff;
+    background: #000;
     transition: border 500ms ease-out, background-color 0.5s ease;
 }
 
@@ -106,28 +106,28 @@ header .logo {
 }
 
 header .logo > span {
-    text-align: center;
     display: flex;
-    margin-bottom: -5px;
-    font-size: 60px;
     justify-content: center;
     align-items: center;
+    margin-bottom: -5px;
+    font-size: 60px;
+    text-align: center;
 }
 
 header .logo > span>span {
-    transform: rotate(180deg);
-    margin: 0 10px;
-    bottom: 11px;
     position: relative;
+    bottom: 11px;
+    transform: rotate(180deg);
+    margin: 0 9px;
 }
 
 
 header .logo .rocket{
-    transform: rotate(-45deg);
-    width: 60px;
-    height: 60px;
     position: relative;
     top: 8px;
+    transform: rotate(-45deg);
+    height: 60px;
+    width: 60px;
 }
 
 header .logo .rocket>span {
@@ -165,7 +165,6 @@ header .logo-hl {
 
 .sublogo-wrapper > span {
     padding-top: 5px;
-    letter-spacing: 0.5px;
     font-family: "Roboto";
     font-size: 16px;
     font-weight: bold;
@@ -177,7 +176,6 @@ header .logo-hl {
 }
 
 .sublogo-wrapper > span:nth-child(2) {
-    margin: 0 25px;
     color: #f7630c;
 }
 
