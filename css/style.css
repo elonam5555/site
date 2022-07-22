@@ -409,6 +409,10 @@ header .logo-hl {
     letter-spacing: 0.5px;
 }
 
+.menu-element:last-child > a {
+    padding-right: 20px;
+}
+
 .menu-element > a > spna{
     font-size: 30px;
 }
