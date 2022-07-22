@@ -78,7 +78,7 @@ html {
     position: relative;
     display: flex;
     flex-direction: column;
-    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #12141e 100%);
     min-height: 100%;
     height: 100%;
     max-width: 100%;

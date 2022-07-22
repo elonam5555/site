@@ -92,7 +92,7 @@ function updateAddress() {
 
         CONNECT_BUTTON.on('click', web3connect)
         CONNECT_BUTTON.removeClass('connected')
-        CONNECT_BUTTON.children('span').html('<span>ПОДКЛЮЧИТЬ</span><span>💰</span>')
+        CONNECT_BUTTON.children('span').html('<span>ПОДКЛЮЧИТЬ</span><span>🔗</span>')
         CONNECT_BUTTON.addClass('disconnected')
         
         REF_LINK.children('.button-copy').off('click', copyRefLink)

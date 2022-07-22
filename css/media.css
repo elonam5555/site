@@ -30,6 +30,11 @@
         align-items: center;
         padding-left: 20px;
     }
+
+    .menu-element:last-child > a {
+        padding-right: 0px;
+    }
+
     .menu-element > a > span {
         font-size: 21px;
         margin-left: 3px;
