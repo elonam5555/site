@@ -27,6 +27,7 @@ html {
 }
 
 .contacts-section {
+    padding-top: 25px;
     z-index: 2;
     background: linear-gradient(90deg, #ffffff00, #000000, #ffffff00);
 }
@@ -39,6 +40,12 @@ html {
     border: 2px solid #38507c;
     border-radius: 10px;
     background: #000;
+}
+
+.contacts-section>div {
+    background: #00000096;
+    border-radius: 10px;
+    padding: 5px 10px 5px 10px;
 }
 
 .contacts-section li>div>button {
@@ -443,6 +450,7 @@ header .logo-hl {
     flex-direction: column;
     align-items: center;
     width: 80%;
+    min-width: 300px;
     padding-top: 10px;
 }
 
@@ -475,15 +483,20 @@ header .logo-hl {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 25px;
+    z-index: 2;
+    background: linear-gradient(90deg, #ffffff00, #000000, #ffffff00);
 }
 
 .section-refferal-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(90deg, #ffffff00, #000000, #ffffff00);
+    background: #00000096;
     width: 80%;
-    padding-top: 10px;
+    min-width: 300px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
 }
 
 .refferal-title {
@@ -518,14 +531,15 @@ header .logo-hl {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #f5deb3;
+    border: 2px solid #38507c;
     border-radius: 10px;
     margin-bottom: 5px;
-    background: #ffffff1a;
+    background: #000;
     height: 60px;
     width: 100%;
     box-sizing: border-box;
     padding: 5px 20px;
+    z-index: 10;
 }
 
 .refferal-link {
@@ -583,6 +597,7 @@ footer {
     align-items: center;
     background: linear-gradient(90deg, #ffffff00, #000000, #ffffff00);
     width: 80%;
+    min-width: 300px;
     padding: 25px 0px;
 }
 
