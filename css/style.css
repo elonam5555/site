@@ -89,7 +89,7 @@ html {
 
 header {
     z-index: 2;
-    background: linear-gradient(0deg, #ffffff00, #3e3e3e 60%, #fce10069 68%, #ffffff00 110%);
+    background: linear-gradient(0deg, #ffffff00, #3e3e3e 63%, #fce10069 70%, #ffffff00 110%);
     padding-top: 25px;
     margin-top: -10px;
     display: flex;
@@ -384,18 +384,21 @@ header .logo-hl {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 15px;
+    margin-top: 15px;
+    border-radius: 10px;
+    background: #000;
+    box-shadow: 0px -5px 10px #fce10069;
 }
 
 .menu-element {
     display: flex;
     align-items: center;
-    background: radial-gradient(ellipse at bottom, #38507c66 0%, #38507c33 100%);
-    box-shadow: 0px 0px 10px #fce10069;
+    padding: 10px 10px;
 }
 
 .menu-element > a {
-    padding-right: 10px;
+    padding-left: 10px;
+    text-align: center;
     text-decoration: none;
     color: #ffffff;
     font-family: 'Roboto';

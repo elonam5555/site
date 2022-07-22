@@ -1,10 +1,12 @@
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 815px) {
     header {
         background: linear-gradient(0deg, #ffffff00, #3e3e3e 75%, #fce10069 80%, #ffffff00 110%);
     }
 
     .menu-wrapper {
         flex-direction: column;
+        background: transparent;
+        box-shadow: none;
     }
 
     .menu-element {
