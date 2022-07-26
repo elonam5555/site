@@ -44,7 +44,7 @@ html {
 .contacts-section>div {
     border-radius: 10px;
     background: #00000096;
-    padding: 5px 10px 10px 10px;
+    padding: 5px 10px 20px 10px;
     min-width: 300px;
 }
 
@@ -460,7 +460,7 @@ header .logo-hl {
     background: #00000096;
     min-width: 300px;
     width: 80%;
-    padding: 5px 10px 10px 10px;
+    padding: 5px 10px 20px 10px;
     padding-top: 10px;
 }
 
@@ -508,7 +508,7 @@ header .logo-hl {
     background: #00000096;
     min-width: 300px;
     width: 80%;
-    padding: 5px 10px 10px 10px;
+    padding: 5px 10px 20px 10px;
 }
 
 .refferal-title {
